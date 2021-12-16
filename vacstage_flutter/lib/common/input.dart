@@ -13,7 +13,9 @@ class _InputState extends State<Input> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // width: 300,
+      // input 감싸는 box 
+      width: 300,
+      height: 45,
       margin: EdgeInsets.all(10.0),
       padding: EdgeInsets.only(left: 10.0),
       decoration: BoxDecoration(
@@ -24,19 +26,24 @@ class _InputState extends State<Input> {
       ),
       child: Row(
         children: [
+          // icon 
           Container(
             child: SvgPicture.asset('assets/images/Id.svg'),
           ),
+          // input box 
           Container(
-            width: 300,
+            width: 250,
             padding: EdgeInsets.only(left: 10.0),
             child: TextField(
+              style: TextStyle(
+              fontSize: 20.0,
+            ),
               decoration: InputDecoration(
                 hintText: '아이디를 입력하세요.',
                 border: InputBorder.none,
               ),
             )
-          )    
+          ),    
         ],
       )
     );
