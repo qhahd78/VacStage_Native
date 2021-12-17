@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Button extends StatefulWidget {
+  Button({@required this.route, @required this.text});
+
+  final route;
+  final text;
   @override
   _ButtonState createState() => _ButtonState();
 }
@@ -13,9 +17,15 @@ class _ButtonState extends State<Button> {
         width: 300,
         height: 50,
         child: TextButton(
-          onPressed: () {},
-          child: Text("로그인",
-            style: TextStyle(fontSize: 22.0, fontFamily: 'Pretendard', fontWeight: FontWeight.w700),
+          onPressed: () {
+            Navigator.pushNamed(context, widget.route);
+          },
+          child: Text(
+            widget.text,
+            style: TextStyle(
+                fontSize: 22.0,
+                fontFamily: 'Pretendard',
+                fontWeight: FontWeight.w700),
           ),
           style: TextButton.styleFrom(
             primary: Colors.white,
