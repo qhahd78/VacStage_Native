@@ -26,7 +26,7 @@ class _InputState extends State<Input> {
   Widget build(BuildContext context) {
     return Container(
         // input 감싸는 box
-        width: 300,
+        width: 320,
         height: 45,
         margin: EdgeInsets.all(10.0),
         padding: EdgeInsets.only(left: 10.0),

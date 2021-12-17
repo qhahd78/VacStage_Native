@@ -27,7 +27,7 @@ class Login extends StatelessWidget {
                 )
               ),
               Container(
-                child: Button(text: '로그인', route: '/select'),
+                child: Button(text: '로그인', route: '/home'),
               ),
               Container(
                 margin: EdgeInsets.only(top: 10),

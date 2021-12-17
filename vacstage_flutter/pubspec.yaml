@@ -53,6 +53,10 @@ flutter:
     - assets/images/Id.svg
     - assets/images/Pw.svg
     - assets/images/Select.svg
+    - assets/images/List.svg
+    - assets/images/Search.svg
+    - assets/images/ArrowDown.svg
+    - assets/images/Test.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
