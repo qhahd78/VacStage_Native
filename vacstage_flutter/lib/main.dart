@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './selectPage.dart';
 import './loginPage.dart';
 
 void main() {
@@ -10,10 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginPage(),
       theme: ThemeData(
         fontFamily: 'Pretendard',
       ),
+      initialRoute: '/',
+      routes: {
+        '/' : (context) => LoginPage(),
+        '/select' : (context) => SelectPage(),
+      },
     );
   }
 }
